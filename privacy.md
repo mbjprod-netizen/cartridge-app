@@ -86,4 +86,4 @@ If this privacy policy is updated, the "Last updated" date at the top of this pa
 
 ## Contact
 
-For any questions about privacy or this policy, contact: **[your email here]**
+For any questions about privacy or this policy, contact: **mbjprod@gmail.com**
