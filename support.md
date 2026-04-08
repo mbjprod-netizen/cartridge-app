@@ -30,8 +30,8 @@ Cartridge is **not** made by or affiliated with Synology Inc. It is an independe
 
 ### What do I need to use Cartridge?
 
-- An iPhone or iPad running iOS 17 or later
-- A Synology NAS running DSM 7 or later, with the **Audio Station** package installed
+- An iPhone or iPad running iOS 18 or later
+- A Synology NAS running DSM 6 or later, with the **Audio Station** package installed (only tested with DSM 6)
 - A Synology account on the NAS with permission to access Audio Station
 - Your music library organized in Audio Station
 
@@ -71,10 +71,6 @@ For DSD files, audio streams to AirPlay receivers as decoded PCM frames. Some Ai
 
 No. Cartridge does not collect, transmit, or share any personal data with the developer or any third party. All data stays on your device and on your own NAS. See the [Privacy Policy](./privacy.html) for details.
 
-### Is Cartridge open source?
-
-[If applicable, link to the source repo. If not, remove this section.]
-
 ### How do I reset the connection?
 
 Go to **Settings → Server → Reset Connection**. This clears all saved credentials and cached connection data. You'll need to enter your server address and log in again afterward.
@@ -86,9 +82,9 @@ Cartridge is a pure playback app. It does not have social features, user account
 ## Known limitations
 
 - Apple TV AirPlay transport controls (next/previous track) may not work in all configurations
-- Very old DSM versions (pre-DSM 7) may have authentication issues due to API differences
+- Only tested on DSM 6
 - Subsonic protocol is not supported — Cartridge only talks to the native Synology Audio Station API
-- Multichannel DSD may not deliver Spatial Audio to AirPods Pro (iOS limitation on audio-engine playback)
+- Multichannel DSD may not deliver Spatial Audio to AirPods Pro nor multichannel to AppleTV (iOS limitation on audio-engine playback chosen for DSD to PCM conversion)
 
 ## Legal
 
