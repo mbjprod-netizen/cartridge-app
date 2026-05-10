@@ -4,7 +4,7 @@ title: Privacy Policy
 
 # Privacy Policy for Cartridge
 
-**Last updated: 8 April 2026**
+**Last updated: 6 May 2026**
 
 Thank you for using Cartridge. This privacy policy explains what data the app handles, where it goes, and what control you have over it.
 
@@ -58,15 +58,20 @@ Cartridge contains no third-party tracking, analytics, or advertising SDKs of an
 ## Permissions the app requests
 
 - **Local network access** (iOS 14+): Required to discover your Synology NAS on your Wi-Fi network and establish a direct connection. You will be prompted the first time the app tries to connect to a local address.
+- **Apple Music access** (optional, opt-in): Used in two ways: (1) to fetch artist images and album artwork from the Apple Music catalog when your NAS does not have cover art, and (2) if you enable it in Settings, to add the currently-playing track from your NAS to your Apple Music library, favorites, or a playlist you choose. Only the album title, artist name, and track title are sent to Apple Music — no listening history, library contents, play counts, or other personal information is shared. Adding tracks requires an active Apple Music subscription. You can deny this permission, or leave streaming integration disabled in Cartridge's Settings, and the app will continue to work normally with placeholder artwork and no streaming-service integration.
 - **Background audio**: Allows music playback to continue when the app is in the background or the screen is locked.
 
 ## Third-party services
 
-Cartridge does not integrate any third-party services, SDKs, analytics, advertising networks, or cloud services. The only network traffic the app generates is:
+The only external services Cartridge communicates with are:
 
-1. Direct connections to your own Synology NAS
-2. DNS resolution via iOS system services
-3. Optional QuickConnect relay connections through Synology's own QuickConnect infrastructure, which routes traffic between your device and your NAS when a direct connection is not possible. QuickConnect is a Synology service subject to [Synology's privacy policy](https://www.synology.com/en-global/company/legal/privacy).
+1. **Your own Synology NAS**: Direct connections to browse and stream your music library.
+2. **Apple Music catalog** (via MusicKit, optional): Used to look up artist images and missing album artwork, and — if you enable streaming integration in Settings — to add tracks from your NAS to your Apple Music library, favorites, or a playlist you choose. Only artist names, album titles, and (for adds) track titles are sent. Adding tracks requires an active Apple Music subscription. Requires your permission (iOS will prompt you on first use).
+3. **DNS resolution**: Via iOS system services.
+4. **Synology QuickConnect** (optional): Relay connections through Synology's own QuickConnect infrastructure when a direct connection is not possible. Subject to [Synology's privacy policy](https://www.synology.com/en-global/company/legal/privacy).
+5. **Spotify** (optional, advanced): If you enable Spotify integration in Settings, Cartridge can add tracks from your NAS to your Spotify Liked Songs or a playlist you choose. To use this feature you create your own free Spotify Developer App, paste its clientId into Cartridge's Settings, and authenticate via the standard Spotify OAuth flow. **As of 9 March 2026, Spotify requires you to have an active Spotify Premium subscription to use this feature, and limits each developer to one App with up to five authorised users — this is a Spotify policy that Cartridge cannot work around.** Track title and artist are sent to Spotify's catalog to find a match. Your Spotify access tokens are stored in the iOS Keychain on your device only and never sent to the developer. The clientId you paste is stored in the app's local preferences. Subject to [Spotify's privacy policy](https://www.spotify.com/legal/privacy-policy/).
+
+Cartridge contains no third-party tracking, analytics, or advertising SDKs.
 
 ## Children's privacy
 
